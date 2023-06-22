@@ -9,6 +9,7 @@ export async function getSession() {
 
 export default async function getCurrentUser() {
   try {
+    // session stores login user details , we can get currentUser only from session as its created when a user is loged in
     const session = await getSession();
 
     if (!session?.user?.email) {
