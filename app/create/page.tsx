@@ -69,6 +69,7 @@ export default function page() {
   //   };
 
   return (
+    // almost same as input ,only cloudinary img component is added , to uplode files from system to cloudinary [post method of axios]
     <form onSubmit={onSubmit} className="w-[600px] h-[700px] mx-auto py-12">
       <div>
         <ImageUpload

@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-
 import getCurrentUser from "./actions/getCurrentUser";
 import Navbar from "@/component/navbar/Navbar";
 
@@ -16,7 +15,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // getting currentUser which is logged in into main Component here, to use it
   const currentUser = await getCurrentUser();
   return (
     <html lang="en">

@@ -40,7 +40,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
             <div className="text-lg">Click to upload</div>
 
             {value && (
-              <div className="absolute inset-0 w-full h-full">
+              <div className="relative inset-0 w-40 h-40">
                 <Image
                   alt="upload"
                   fill
